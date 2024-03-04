@@ -1,0 +1,112 @@
+:root{
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--Off-white);
+}
+
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrapper {
+    width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius:1rem 1rem 10rem 1rem ;
+    background: var(--White);
+}
+
+.dob-form{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+.dob-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--Smokey-grey);
+    
+}
+
+.dob-form input {
+    width: 70px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    max-width: 100px;
+    padding: .5rem;
+    border: 1px solid var(--Light-grey);
+    border-radius: .25rem;
+    margin-top: 0.25rem;
+}
+
+.error input {
+    border-color: var(--Light-red);
+}
+.error label{
+    color: var(--Light-red);
+}
+
+.error-message {
+    color: var(--Light-red);
+}
+
+.submit-btn {
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--Purple);
+    border: none;
+}
+
+@media (max-width: 550px) {
+    .submit-btn{
+        right: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.seperator {
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    height:1px;
+    background: var(--Light-grey)
+
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+span {
+    color: var(--Purple);
+    font-weight: 800;
+    font-size: 3rem;
+}
